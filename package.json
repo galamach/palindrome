@@ -1,5 +1,5 @@
 {
-  "name": "palindrome",
+  "name": "galamach-palindrome",
   "version": "0.1.0",
   "description": "Palindrome detector",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "learn-enough",
     "javascript"
   ],
-  "author": "Michael Hartl",
+  "author": "Gaston w/ help from Michael Hartl",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/galamach/palindrome/issues"
