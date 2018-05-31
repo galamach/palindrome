@@ -1,5 +1,5 @@
 {
-  "name": "galamach-palindrome",
+  "name": "galamach-palindrome-section9",
   "version": "0.1.0",
   "description": "Palindrome detector",
   "main": "index.js",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/galamach/palindrome/issues"
   },
-  "homepage": "https://github.com/galamach/palindrome#readme"
+  "homepage": "https://github.com/galamach/palindrome#readme",
+  "dependencies": {
+    "galamach-palindrome": "^0.1.0"
+  }
 }
