@@ -35,6 +35,11 @@ function Phrase(content) {
     return this.letters().toLowerCase();
   }
 
+  // Returns whether content is an empty string or not.
+  this.emptiness = function emptiness() {
+    return !!this.content.blank();
+  }
+
   // Returns the letters in the content.
   // For example:
   // new Phrase("Hello, world!").letters() === "Helloworld"
@@ -46,18 +51,18 @@ function Phrase(content) {
   // Returns true if the phrase is a palindrome, false otherwise.
   this.palindrome = function palindrome() {
     //return this.processedContent() === reverse(this.processedContent());
-    return this.processedContent() === this.processedContent().reverse();
+    //if (this.letters()) {
+    if (!this.emptiness()) {
+      return this.processedContent() === this.processedContent().reverse();
+    } else {
+      return false;
+    }
   }
 
-    // Returns whether content is an empty string or not.
-    this.emptiness = function emptiness() {
-      return !!this.content.blank();
-    }
-
-    // Returns last character of content.
-    this.butNotLeast = function butNotLeast() {
-      Array.from(this.content).last();
-    }
+  // Returns last character of content.
+  this.butNotLeast = function butNotLeast() {
+    Array.from(this.content).last();
+  }
 }
 
 // Defines a translated Phrase object.

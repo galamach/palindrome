@@ -1,0 +1,16 @@
+#!/usr/local/bin/node
+
+let request = require("request");
+let Phrase = require("galamach-palindrome-section9");
+let url = 'https://cdn.learnenough.com/phrases.txt'
+
+request(url, function(error, response, body) {
+  let lines = body.split("\n");
+  let palindromes = lines.filter(line => {
+    phrase = new Phrase(line);
+    return phrase.palindrome() === true;
+  });
+  palindromes.forEach(function(palindrome) {
+    console.log("palindrome detected: ", palindrome);
+  });
+});

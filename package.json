@@ -1,6 +1,6 @@
 {
-  "name": "galamach-palindrome-section9",
-  "version": "0.1.0",
+  "name": "galamach-palindrome",
+  "version": "0.2.1",
   "description": "Palindrome detector",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,12 @@
   },
   "homepage": "https://github.com/galamach/palindrome#readme",
   "dependencies": {
-    "galamach-palindrome": "^0.1.0"
-  }
+    "galamach-palindrome": "^0.1.0",
+    "galamach-palindrome-section9": "^0.2.1",
+    "request": "^2.87.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }
