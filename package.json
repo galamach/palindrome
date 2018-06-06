@@ -24,6 +24,7 @@
   "dependencies": {
     "galamach-palindrome": "^0.1.0",
     "galamach-palindrome-section9": "^0.2.1",
+    "jsdom": "^11.11.0",
     "request": "^2.87.0"
   },
   "directories": {
